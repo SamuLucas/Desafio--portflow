@@ -8,14 +8,14 @@
 header {
     height: 80px;
     background-color: #FFFFFF;
-    display: flex;
 }
 
 h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     line-height: 75px;
     padding-left: 90px;
-    position: fixed;
+    position: fixed
 }
 
 .box-menu {
@@ -33,31 +33,12 @@ h2 {
     width: 40%;
     color: gray;
     position: fixed;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .box-lista :hover {
     cursor: pointer;
     color: black;
-    transition: all 0, 5s;
-    transform: scale(1, 1);
-}
-
-.btn-mobile {
-    height: 44px;
-    width: 40px;
-    display: flex;
-    font-size: 30px;
-    background-color: black;
-    color: #FFFFFF;
-    right: 30px;
-    top: 10px;
-    position: absolute;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.btn-mobile :hover {
-    color: lightblue;
     transition: all 0, 5s;
     transform: scale(1, 1);
 }
@@ -75,9 +56,10 @@ h2 {
 h1 {
     position: absolute;
     padding-top: 265px;
-    font-size: 80px;
+    font-size: 71px;
     color: #FFFFFF;
     padding-left: 92px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
