@@ -49,7 +49,7 @@ h2 {
 }
 
 .laranja-img {
-    width: 1520px;
+    width: 100%;
     height: 700px;
 }
 
@@ -131,4 +131,40 @@ span {
     font-size: 12px;
     padding-left: 25px;
     padding-top: 8px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        text-align: center;
+        justify-content: center;
+        right: 30px;
+    }
+    .box-lista {
+        display: none;
+    }
+    .laranja-img {
+        width: 100%;
+    }
+    h1 {
+        right: 40px;
+    }
+    .img-1 {
+        width: 85%;
+        height: 450px;
+    }
+    footer {
+        background-color: #7FDBD4;
+        margin: 50px 50px;
+    }
+    .img-canais {
+        justify-content: center;
+    }
+    h4,
+    span {
+        margin-top: 50px;
+        left: 250px;
+    }
+    .box-canais {
+        justify-content: space-between;
+    }
 }
