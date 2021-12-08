@@ -13,6 +13,20 @@
             position: fixed;
         }
         
+        .btn-mobile {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+            margin-top: 10px;
+            position: absolute;
+            left: 30px;
+            background-color: black;
+            color: orangered;
+            cursor: pointer;
+            display: none;
+        }
+        
         h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 30px;
@@ -105,22 +119,16 @@
         footer {
             height: 80px;
             background-color: rgb( 210, 210, 226);
-            margin-top: 40px;
-            position: relative;
+            display: flex;
         }
         
         .box-canais {
-            width: 100%;
+            width: 50%;
             height: 25px;
             display: flex;
-            padding-left: 70px;
-            position: absolute;
-            margin-top: 25px;
         }
         
-        .img-canais {
-            width: 4%;
-        }
+        .img-canais {}
         
         .img-canais :hover {
             cursor: pointer;
@@ -130,52 +138,78 @@
         
         .container-footer {
             display: flex;
-            position: relative;
         }
         
         h4 {
-            padding-left: 255px;
-            padding-top: 5px;
             display: flex;
             font-size: 20px;
-            position: absolute;
         }
         
         span {
             display: flex;
             font-size: 12px;
-            padding-left: 385px;
-            position: absolute;
         }
         
-        @media (max-width: 768px) {
+        .btn-Topo {
+            background-color: black;
+            color: gray;
+            width: 90px;
+            height: 50px;
+            text-transform: uppercase;
+            font-size: 14px;
+            left: 900px;
+            position: absolute;
+            cursor: pointer;
+            display: none;
+        }
+        
+        @media (max-width: 667px) {
             h2 {
                 justify-content: center;
             }
             .box-lista {
                 display: none;
             }
-            .laranja-img {
+            header {
+                position: absolute;
                 width: 100%;
+            }
+            .box-laranja {
+                width: 100%;
+                margin-bottom: 50px;
+                height: 800px;
             }
             h1,
             p {
                 right: 20px;
             }
             .img-1 {
-                text-align: center;
+                width: 100%;
+                padding: 20px;
+                height: 80%;
             }
             footer {
                 background-color: #7FDBD4;
-                margin: 50px 50px;
+                flex-direction: column;
+                margin-top: 50px;
+                width: 100%;
+            }
+            .box-canais {
+                width: 100%;
+            }
+            .img-canais {
+                width: 40px;
+                padding: 2px;
+            }
+            .container-footer {
+                position: relative;
             }
             h4,
             span {
                 margin-top: 50px;
             }
             h4 {
-                position: relative;
-                left: 40px;
+                position: absolute;
             }
             span {
                 position: absolute;
