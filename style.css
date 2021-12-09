@@ -92,22 +92,11 @@
             opacity: 100%;
         }
         
-        .box-bloco_1 {
-            grid-template-columns: 100px 100px 100px 100px;
-            margin: 5px;
-            padding-left: 85px;
-        }
-        
-        .box-bloco_2 {
-            grid-template-columns: 100px 100px 100px 100px;
-            margin: 5px;
-            padding-left: 85px;
-        }
-        
-        .box-bloco_3 {
-            grid-template-columns: 100px 100px 100px 100px;
-            margin: 5px;
-            padding-left: 85px;
+        .img-section {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
         }
         
         .img-1 {
@@ -123,12 +112,21 @@
         }
         
         .box-canais {
-            width: 50%;
+            width: 15%;
             height: 25px;
             display: flex;
+            justify-content: space-between;
         }
         
-        .img-canais {}
+        .box-rodape {
+            width: 100%;
+        }
+        
+        .img-canais {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
         
         .img-canais :hover {
             cursor: pointer;
@@ -138,14 +136,17 @@
         
         .container-footer {
             display: flex;
+            align-items: center;
+            justify-content: space-around;
         }
         
         h4 {
             display: flex;
             font-size: 20px;
+            justify-content: center;
         }
         
-        span {
+        .paragrafo-footer1 .paragrafo-footer2 {
             display: flex;
             font-size: 12px;
         }
@@ -163,7 +164,7 @@
             display: none;
         }
         
-        @media (max-width: 667px) {
+        @media (max-width: 768px) {
             h2 {
                 justify-content: center;
             }
