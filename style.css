@@ -1,250 +1,254 @@
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                list-style: none;
-            }
-            
-            header {
-                height: 80px;
-                background-color: orangered;
-                width: 100%;
-                z-index: 4;
-                position: fixed;
-            }
-            
-            .btn-mobile {
-                width: 50px;
-                height: 50px;
-                font-size: 30px;
-                line-height: 50px;
-                margin-top: 10px;
-                position: absolute;
-                left: 0px;
-                background-color: black;
-                color: orangered;
-                cursor: pointer;
-                display: none;
-            }
-            
-            .subtítulo-header {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 30px;
-                line-height: 75px;
-                padding-left: 105px;
-            }
-            
-            .container-menu {
-                display: flex;
-            }
-            
-            .box-menu {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-                padding-right: 80px;
-            }
-            
-            .box-lista {
-                line-height: 75px;
-                justify-content: space-between;
-                font-size: 20px;
-                display: flex;
-                width: 40%;
-                color: blue;
-                font-family: 'Montserrat', sans-serif;
-            }
-            
-            .box-lista :hover {
-                cursor: pointer;
-                color: black;
-                transition: all 0.5s;
-                transform: scale(1, 1);
-                font-size: 22px;
-            }
-            
-            .box-laranja {
-                width: 100%;
-                background-image: url(./assets/laranja\ azul\ recorte@2x.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 600px;
-                position: relative;
-                margin-bottom: 50px;
-            }
-            
-            .titulo-main {
-                padding-top: 235px;
-                font-size: 70px;
-                color: #FFFFFF;
-                padding-left: 105px;
-                font-family: 'Montserrat', sans-serif;
-                position: absolute;
-            }
-            
-            .paragrafo-main {
-                font-size: 25px;
-                color: #FFFFFF;
-                padding-top: 380px;
-                padding-left: 105px;
-                text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
-                opacity: 100%;
-                position: absolute;
-            }
-            
-            .img-section {
-                align-items: center;
-                justify-content: center;
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .img-1 {
-                width: 320px;
-                height: 320px;
-                margin: 5px;
-            }
-            
-            footer {
-                width: 100%;
-                height: 80px;
-                background-color: rgb( 210, 210, 226);
-                display: flex;
-                margin-top: 50px;
-            }
-            
-            .box-canais {
-                width: 22%;
-                height: 25px;
-                display: flex;
-                justify-content: space-between;
-                margin-top: 30px;
-                margin-left: 90px;
-            }
-            
-            .img-canais:hover {
-                color: transparent;
-                transform: scale(1.1);
-                transition: all 0.5s;
-                cursor: pointer;
-            }
-            
-            .box-rodape {
-                width: 100%;
-                display: flex;
-            }
-            
-            .container-footer {
-                display: flex;
-                align-items: center;
-            }
-            
-            .subtítulo-rodape {
-                font-size: 1.5rem;
-                justify-content: center;
-                margin-left: 95px;
-            }
-            
-            .paragrafo-footer1,
-            .paragrafo-footer2 {
-                flex-direction: column;
-                font-size: 15.4px;
-                margin-left: 35px;
-            }
-            
-            .btn-Topo {
-                background-color: black;
-                color: gray;
-                width: 90px;
-                height: 30px;
-                margin-left: 490px;
-                text-transform: uppercase;
-                font-size: 14px;
-                left: 900px;
-                position: absolute;
-                cursor: pointer;
-                display: none;
-            }
-            
-            @media (max-width: 768px) {
-                header {
-                    position: static;
-                    width: 100%;
-                    height: 50px;
-                }
-                .btn-mobile {
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    width: 180px;
-                    margin-top: 0px;
-                }
-                .subtítulo-header {
-                    align-items: center;
-                    margin-left: 210px
-                }
-                .box-lista {
-                    display: none;
-                }
-                .box-laranja {
-                    width: 100%;
-                    height: 900px;
-                    flex-direction: column;
-                }
-                .titulo-main {
-                    flex-direction: column;
-                    font-size: 80px;
-                    width: 50%;
-                    margin-top: 294px;
-                }
-                .paragrafo-main {
-                    font-size: 18px;
-                    margin-top: 449px;
-                }
-                .img-section {
-                    flex-direction: column;
-                }
-                .img-1 {
-                    flex-direction: column;
-                    width: 50%;
-                    margin-left: 191px;
-                }
-                footer {
-                    width: 50%;
-                    height: 50px;
-                    justify-content: center;
-                    background-color: #7FDBD4;
-                    margin-left: 191px;
-                }
-                .box-canais {
-                    align-items: center;
-                    justify-content: center;
-                }
-                .img-canais {
-                    align-items: center;
-                    justify-content: center;
-                    height: 20px;
-                }
-                .container-footer {
-                    flex-direction: column;
-                    margin-top: 90px;
-                    justify-content: flex-start;
-                }
-                .subtítulo-rodape {
-                    font-size: 0.6rem;
-                    flex-direction: column;
-                }
-                .paragrafo-footer1,
-                .paragrafo-footer2 {
-                    font-size: 0.4rem;
-                    flex-direction: column;
-                }
-                .btn-Topo {
-                    display: flex;
-                    flex-direction: column;
-                }
-                .box-rodape {
-                    flex-direction: column;
-                }
-            }
+@import url('https://fonts.googleapis.com/css2? family = Montserrat: wght @ 100 & display = swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header {
+    height: 80px;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 4;
+    position: fixed;
+}
+
+.btn-mobile {
+    width: 70px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 10px;
+    position: absolute;
+    left: 0px;
+    background-color: black;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+.subtítulo-header {
+    font-size: 30px;
+    line-height: 75px;
+    padding-left: 105px;
+}
+
+.container-menu {
+    display: flex;
+}
+
+.box-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.box-lista {
+    line-height: 75px;
+    justify-content: space-between;
+    font-size: 20px;
+    display: flex;
+    width: 40%;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-lista :hover {
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+    transform: scale(1, 1);
+    font-size: 22px;
+}
+
+.box-laranja {
+    width: 100%;
+    background-image: url(./assets/laranja\ azul\ recorte@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.titulo-main {
+    padding-top: 235px;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding-left: 105px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+}
+
+.paragrafo-main {
+    font-size: 25px;
+    color: #FFFFFF;
+    padding-top: 380px;
+    padding-left: 105px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 100%;
+    position: absolute;
+}
+
+.img-section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-1 {
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: rgb( 210, 210, 226);
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-canais {
+    width: 21%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 96px;
+}
+
+.img-canais:hover {
+    color: transparent;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.box-rodape {
+    width: 100%;
+    display: flex;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+}
+
+.subtítulo-rodape {
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-left: 95px;
+}
+
+.paragrafo-footer1,
+.paragrafo-footer2 {
+    flex-direction: column;
+    font-size: 15.4px;
+    margin-left: 35px;
+}
+
+.btn-Topo {
+    background-color: black;
+    color: gray;
+    width: 90px;
+    height: 30px;
+    margin-left: 490px;
+    text-transform: uppercase;
+    font-size: 14px;
+    left: 900px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: static;
+        width: 100%;
+        height: 50px;
+    }
+    .btn-mobile {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 200px;
+        margin-top: 0px;
+    }
+    .subtítulo-header {
+        align-items: center;
+        justify-content: center;
+        margin-left: 230px;
+        margin-bottom: 20px;
+    }
+    .box-lista {
+        display: none;
+    }
+    .box-laranja {
+        background-image: url(./assets/laranja\ azul\ recorte13.png);
+        background-size: cover;
+        height: 900px;
+        flex-direction: column;
+    }
+    .titulo-main {
+        flex-direction: column;
+        font-size: 60px;
+        width: 50%;
+        margin-top: 294px;
+    }
+    .paragrafo-main {
+        font-size: 18px;
+        margin-top: 449px;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-section {
+        flex-direction: column;
+    }
+    .img-1 {
+        width: 50%;
+        flex-direction: column;
+        margin-left: 321px;
+        margin: 30px;
+    }
+    footer {
+        width: 50%;
+        height: 50px;
+        justify-content: center;
+        background-color: #7FDBD4;
+        margin-left: 191px;
+    }
+    .box-canais {
+        align-items: center;
+        justify-content: center;
+    }
+    .img-canais {
+        margin-bottom: 35px;
+    }
+    .container-footer {
+        flex-direction: column;
+        margin-top: 90px;
+        justify-content: flex-start;
+    }
+    .subtítulo-rodape {
+        font-size: 0.6rem;
+        flex-direction: column;
+    }
+    .paragrafo-footer1,
+    .paragrafo-footer2 {
+        font-size: 0.4rem;
+        flex-direction: column;
+    }
+    .btn-Topo {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-rodape {
+        flex-direction: column;
+    }
+}
