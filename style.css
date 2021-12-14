@@ -161,10 +161,9 @@ footer {
     margin-left: 490px;
     text-transform: uppercase;
     font-size: 14px;
-    left: 900px;
+    left: 500px;
     position: absolute;
     cursor: pointer;
-    display: none;
 }
 
 @media (max-width: 768px) {
@@ -173,21 +172,39 @@ footer {
         width: 100%;
         height: 50px;
     }
+    .container-menu {
+        width: 100%;
+    }
     .btn-mobile {
         justify-content: center;
         align-items: center;
         display: flex;
-        width: 200px;
+        width: 150px;
         margin-top: 0px;
+        transition: box-shadow 1s ease-in-out;
+    }
+    .btn-mobile:hover {
+        box-shadow: 0 0 0 8px transparent;
+    }
+    input:checked~label .btn-mobile {
+        box-shadow: 0 0 0 50vw #ffff;
     }
     .subtítulo-header {
         align-items: center;
-        justify-content: center;
-        margin-left: 230px;
-        margin-bottom: 20px;
+        margin-left: 80px;
+        margin-bottom: 30px;
+        font-size: 30px;
     }
     .box-lista {
-        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .25s 1s ease-in-out;
+    }
+    input:checked~.box-lista {
+        opacity: 1;
     }
     .box-laranja {
         background-image: url(./assets/laranja\ azul\ recorte13.png);
@@ -197,13 +214,13 @@ footer {
     }
     .titulo-main {
         flex-direction: column;
-        font-size: 60px;
+        font-size: 50px;
         width: 50%;
         margin-top: 294px;
     }
     .paragrafo-main {
         font-size: 18px;
-        margin-top: 449px;
+        margin-top: 419px;
         justify-content: center;
         align-items: center;
     }
@@ -226,9 +243,11 @@ footer {
     .box-canais {
         align-items: center;
         justify-content: center;
+        width: 20%;
     }
     .img-canais {
         margin-bottom: 35px;
+        width: 40px;
     }
     .container-footer {
         flex-direction: column;
@@ -245,8 +264,7 @@ footer {
         flex-direction: column;
     }
     .btn-Topo {
-        display: flex;
-        flex-direction: column;
+        margin-right: 80px;
     }
     .box-rodape {
         flex-direction: column;
