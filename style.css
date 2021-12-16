@@ -97,13 +97,28 @@ header {
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 .img-1 {
     width: 320px;
     height: 320px;
     margin: 5px;
+    flex-direction: column;
+}
+
+.img-2 {
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.img-3 {
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+    flex-direction: column;
 }
 
 footer {
@@ -164,6 +179,7 @@ footer {
     left: 500px;
     position: absolute;
     cursor: pointer;
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -251,16 +267,17 @@ footer {
     }
     .container-footer {
         flex-direction: column;
-        margin-top: 90px;
-        justify-content: flex-start;
+        margin-top: 15px;
     }
     .subtítulo-rodape {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         flex-direction: column;
+        margin-right: 421px;
+        margin-bottom: 2px;
     }
     .paragrafo-footer1,
     .paragrafo-footer2 {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
         flex-direction: column;
     }
     .btn-Topo {
