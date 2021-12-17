@@ -104,21 +104,18 @@ header {
     width: 320px;
     height: 320px;
     margin: 5px;
-    flex-direction: column;
 }
 
 .img-2 {
     width: 320px;
     height: 320px;
     margin: 5px;
-    flex-direction: column;
 }
 
 .img-3 {
     width: 320px;
     height: 320px;
     margin: 5px;
-    flex-direction: column;
 }
 
 footer {
@@ -242,48 +239,55 @@ footer {
     }
     .img-section {
         flex-direction: column;
-    }
-    .img-1 {
         width: 50%;
         flex-direction: column;
         margin-left: 321px;
         margin: 30px;
+        display: grid;
     }
-    footer {
-        width: 50%;
-        height: 50px;
-        justify-content: center;
-        background-color: #7FDBD4;
-        margin-left: 191px;
-    }
-    .box-canais {
-        align-items: center;
-        justify-content: center;
-        width: 20%;
-    }
-    .img-canais {
-        margin-bottom: 35px;
-        width: 40px;
-    }
-    .container-footer {
-        flex-direction: column;
-        margin-top: 15px;
-    }
-    .subtítulo-rodape {
-        font-size: 0.9rem;
-        flex-direction: column;
-        margin-right: 421px;
-        margin-bottom: 2px;
-    }
-    .paragrafo-footer1,
-    .paragrafo-footer2 {
-        font-size: 0.6rem;
-        flex-direction: column;
-    }
-    .btn-Topo {
-        margin-right: 80px;
-    }
-    .box-rodape {
-        flex-direction: column;
-    }
+}
+
+footer {
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    background-color: #7FDBD4;
+    margin-left: 191px;
+}
+
+.box-canais {
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.img-canais {
+    margin-bottom: 35px;
+    width: 40px;
+}
+
+.container-footer {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.subtítulo-rodape {
+    font-size: 0.9rem;
+    flex-direction: column;
+    margin-right: 421px;
+    margin-bottom: 2px;
+}
+
+.paragrafo-footer1,
+.paragrafo-footer2 {
+    font-size: 0.6rem;
+    flex-direction: column;
+}
+
+.btn-Topo {
+    margin-right: 80px;
+}
+
+.box-rodape {
+    flex-direction: column;
 }
