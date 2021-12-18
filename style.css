@@ -31,7 +31,7 @@ header {
 .subtítulo-header {
     font-size: 30px;
     line-height: 75px;
-    padding-left: 105px;
+    padding-left: 76px;
 }
 
 .container-menu {
@@ -75,9 +75,9 @@ header {
 
 .titulo-main {
     padding-top: 235px;
-    font-size: 70px;
+    font-size: 73px;
     color: #FFFFFF;
-    padding-left: 105px;
+    padding-left: 76px;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
 }
@@ -86,7 +86,7 @@ header {
     font-size: 25px;
     color: #FFFFFF;
     padding-top: 380px;
-    padding-left: 105px;
+    padding-left: 76px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     opacity: 100%;
@@ -96,73 +96,62 @@ header {
 .img-section {
     align-items: center;
     justify-content: center;
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin: 5rem;
 }
 
 .img-1 {
     width: 320px;
     height: 320px;
-    margin: 5px;
+    object-fit: 320px;
 }
 
-.img-2 {
-    width: 320px;
-    height: 320px;
-    margin: 5px;
-}
-
-.img-3 {
-    width: 320px;
-    height: 320px;
-    margin: 5px;
-}
-
-footer {
+.box-rodape {
     width: 100%;
+    display: flex;
     height: 80px;
     background-color: rgb( 210, 210, 226);
-    display: flex;
-    margin-top: 50px;
 }
 
 .box-canais {
-    width: 21%;
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-left: 96px;
+    width: 30%;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65px;
+    margin-top: 15px;
 }
 
-.img-canais:hover {
+.img-canais1 {
+    height: 290%;
+    margin: 12px;
+}
+
+.img-canais1:hover {
     color: transparent;
     transform: scale(1.1);
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.box-rodape {
-    width: 100%;
-    display: flex;
-}
-
 .container-footer {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-.subtítulo-rodape {
-    font-size: 1.5rem;
-    justify-content: center;
-    margin-left: 95px;
+.subtítulo {
+    font-size: 1.6rem;
+    margin-right: 390px;
+    display: flex;
+    position: absolute;
 }
 
-.paragrafo-footer1,
-.paragrafo-footer2 {
-    flex-direction: column;
-    font-size: 15.4px;
-    margin-left: 35px;
+.box-paragrafo-footer {
+    margin-left: 150px;
+    font-size: 1rem;
 }
 
 .btn-Topo {
@@ -187,37 +176,26 @@ footer {
     }
     .container-menu {
         width: 100%;
+        position: relative;
     }
     .btn-mobile {
         justify-content: center;
         align-items: center;
         display: flex;
-        width: 150px;
+        width: 190px;
         margin-top: 0px;
-        transition: box-shadow 1s ease-in-out;
-    }
-    .btn-mobile:hover {
-        box-shadow: 0 0 0 8px transparent;
-    }
-    input:checked~label .btn-mobile {
-        box-shadow: 0 0 0 50vw #ffff;
+        margin-bottom: 0px;
     }
     .subtítulo-header {
         align-items: center;
-        margin-left: 80px;
-        margin-bottom: 30px;
-        font-size: 30px;
+        margin-left: 200px;
+        font-size: 25px;
+        position: absolute;
     }
     .box-lista {
-        position: absolute;
+        display: none;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: .25s 1s ease-in-out;
-    }
-    input:checked~.box-lista {
-        opacity: 1;
     }
     .box-laranja {
         background-image: url(./assets/laranja\ azul\ recorte13.png);
@@ -238,56 +216,46 @@ footer {
         align-items: center;
     }
     .img-section {
+        width: 100%;
         flex-direction: column;
-        width: 50%;
-        flex-direction: column;
-        margin-left: 321px;
-        margin: 30px;
-        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
     }
-}
-
-footer {
-    width: 50%;
-    height: 50px;
-    justify-content: center;
-    background-color: #7FDBD4;
-    margin-left: 191px;
-}
-
-.box-canais {
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-}
-
-.img-canais {
-    margin-bottom: 35px;
-    width: 40px;
-}
-
-.container-footer {
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.subtítulo-rodape {
-    font-size: 0.9rem;
-    flex-direction: column;
-    margin-right: 421px;
-    margin-bottom: 2px;
-}
-
-.paragrafo-footer1,
-.paragrafo-footer2 {
-    font-size: 0.6rem;
-    flex-direction: column;
-}
-
-.btn-Topo {
-    margin-right: 80px;
-}
-
-.box-rodape {
-    flex-direction: column;
+    .img-1 {
+        margin-right: 30px;
+        justify-content: center;
+        width: 80%;
+        height: 320px;
+        flex-direction: column;
+        background-position: 60%;
+    }
+    footer {
+        background-color: aquamarine;
+        margin: 79px 76px;
+        justify-content: center;
+    }
+    .box-canais {
+        height: 20%;
+        margin-top: 30px;
+        display: flex;
+        margin-left: 210px;
+    }
+    .img-canais1 {
+        margin: 20px;
+    }
+    .container-footer {
+        flex-direction: column;
+        position: relative;
+    }
+    .subtítulo {
+        position: absolute;
+        margin-top: 90px;
+    }
+    .box-paragrafo-footer {
+        margin: 50px 50px;
+        justify-content: flex-start;
+        margin-right: 100px;
+        margin-top: 140px;
+    }
 }
